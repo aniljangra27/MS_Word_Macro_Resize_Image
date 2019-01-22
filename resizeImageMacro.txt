@@ -1,0 +1,15 @@
+Sub ResizeImage()
+
+Dim i As Long
+With ActiveDocument
+    For i = 1 To .InlineShapes.Count
+        With .InlineShapes(i)
+           .Height = 160
+            .Width = 160
+        End With
+    Next i
+End With
+
+
+End Sub
+
